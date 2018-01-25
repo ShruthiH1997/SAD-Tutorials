@@ -1,6 +1,9 @@
 import java.util.Scanner;
-
-class Calculator{
+public interface Calc{
+    public void expStack(String exp);
+    public int calculate(String exp);
+}
+class Calculator implements Calc{
 
 
 String stack[]=new String[50]; 
