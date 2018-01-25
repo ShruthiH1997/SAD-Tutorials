@@ -1,9 +1,12 @@
 // A Java program for a Server
 import java.net.*;
 import java.io.*;
-
+public interface Calc{
+    public void expStack(String exp);
+    public int calculate(String exp);
+}
 //Calculator program
-class Calculator{
+class Calculator implements Calc{
 String stack[]=new String[50]; 
 int top=-1;
 void expStack(String exp){
